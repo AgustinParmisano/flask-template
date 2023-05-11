@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>{{ data.titulo }}</title>
+    </head>
+    <body>
+        <h1>Hola {{ data.nombre }} desde Flask!!</h1>
+        <h1>{{ data.mensaje }}</h1>
+        {% if data.cumple %}
+            <img src="\static\images\cumple.jpg" alt="imagen cumple">
+        {% else %}
+            <img src="\static\images\nocumple.png" alt="imagen cumple">
+        {% endif %}
+    </body>
+</html>

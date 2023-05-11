@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> {{ data.titulo }} </title>
+    </head>
+    <body>
+        <h1> {{ data.presentacion }}</h1>
+        <ul>
+            {% for curso in data.cursos %}
+            <li><h3>{{ curso }} </h3></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
